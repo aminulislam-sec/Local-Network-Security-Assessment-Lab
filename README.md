@@ -5,7 +5,7 @@ Notes, lab findings, and explanations — written clearly enough that any though
 
 ---
 
-## About Me
+## About Me  
 
 I am an English teacher in Bangladesh, a former Scale AI contributor, and a Python learner (Stanford Code in Place, 2024).
 I am building hands-on cybersecurity knowledge with the goal of becoming a cybersecurity technical communicator serving remote clients globally.

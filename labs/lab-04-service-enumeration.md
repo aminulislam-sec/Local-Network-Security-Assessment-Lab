@@ -282,9 +282,6 @@ beginning of the question.
 
 Now that I know what services are running and which versions they are,
 the next step is asking whether those versions have any known weaknesses.
-This is not about attacking anything. It is about learning to look at a
-service and ask — has anyone found a problem with this before? Is there
-a public record of it?
 
 That shift — from "what is running" to "what risks does that carry" —
 is the foundation of how real vulnerability assessment works.

@@ -244,6 +244,10 @@ domain name too, but it is not yet widely deployed.
 
 ### Step 4 — Round Trip Time Graph
 
+![TCP Round Trip Time Graph](../assets/images/lab09/lab09_tcp_rtt_graph.png)
+
+*RTT graph showing a flat, stable connection to Google's server throughout the capture session.*
+
 From Statistics > TCP Stream Graphs > Round Trip Time, a graph of the
 connection's health appeared.
 
@@ -256,6 +260,10 @@ overloaded server.
 ---
 
 ### Step 5 — Protocol Hierarchy
+
+![Protocol Hierarchy Statistics](../assets/images/lab09/lab09_protocol_hierarchy.png)
+
+*Protocol breakdown showing 91.6% of all captured packets were TLS-encrypted.*
 
 From Statistics > Protocol Hierarchy, a breakdown of every protocol in
 the capture:

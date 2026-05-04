@@ -31,17 +31,29 @@ without probing any ports.
 ## Raw Output
 
 Starting Nmap 7.95 ( https://nmap.org ) at 2026-04-21 09:38 EDT
+
 Nmap scan report for 10.218.101.76
+
 Host is up (0.017s latency).
+
 MAC Address: F8:28:19:15:BD:41 (Liteon Technology)
+
 Nmap scan report for 10.218.101.121
+
 Host is up (0.00039s latency).
+
 MAC Address: A4:6B:B6:24:6E:22 (Intel Corporate)
+
 Nmap scan report for 10.218.101.182
+
 Host is up (0.0075s latency).
+
 MAC Address: 4A:A3:8F:98:56:6B (Unknown)
+
 Nmap scan report for 10.218.101.36
+
 Host is up.
+
 Nmap done: 256 IP addresses (4 hosts up) scanned in 4.25 seconds
 
 ---

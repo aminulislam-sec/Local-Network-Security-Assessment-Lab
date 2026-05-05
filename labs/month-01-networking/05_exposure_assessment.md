@@ -45,8 +45,8 @@ In Lab 04, I asked — what is behind each door?
 In Lab 05, I am asking — should these doors be open at all, and what
 happens if the wrong person walks through?
 
-That progression is how real security analysis works. Each question builds
-on the last one. Finding a service is not the end. Understanding its risk
+I think this progression is how real security analysis works. Each question builds
+on the last one. Finding a service is not the end. However, understanding its risk
 is.
 
 A useful way to think about it: imagine a shop with three windows left
@@ -90,12 +90,19 @@ automatically before doing manual analysis.
 ## Raw Output — Vulnerability Script Scan
 
 Starting Nmap 7.95 at 2026-04-23 07:10 EDT
+
 Nmap scan report for 10.218.101.121
+
 Host is up (0.00044s latency).
-PORT     STATE SERVICE
-902/tcp  open  iss-realsecure
-912/tcp  open  apex-mesh
-5357/tcp open  wsdapi
+
+PORT       STATE   SERVICE
+
+902/tcp    open    iss-realsecure
+
+912/tcp    open    apex-mesh
+
+5357/tcp   open    wsdapi
+
 MAC Address: A4:6B:B6:24:6E:22 (Intel Corporate)
 
 No vulnerability signatures were detected. The three ports remained open
@@ -114,7 +121,9 @@ configuration review still matter.
 ### Finding 1 — VMware Authentication Service (Port 902)
 
 **Service:** VMware Authentication Daemon 1.10
+
 **Communication:** Encrypted with SSL
+
 **Accessible from network:** Yes — confirmed from Kali in Lab 04
 
 VMware Workstation opened this port as part of its normal operation.
@@ -124,7 +133,7 @@ That is a positive sign. Intercepting this traffic would be significantly
 harder than intercepting unencrypted traffic.
 
 **Risk:** Moderate. The service is reachable from other machines on the
-local network, which increases attack surface. In a home lab with trusted
+local network, which increases the attack surface. In a home lab with trusted
 devices, this is acceptable. In a shared or public network, a remote
 authentication service exposed to the network would require much closer
 attention.
@@ -137,7 +146,9 @@ if the network changes.
 ### Finding 2 — VMware Authentication Service (Port 912)
 
 **Service:** VMware Authentication Daemon 1.0
+
 **Communication:** No SSL — unencrypted
+
 **Accessible from network:** Yes — confirmed from Kali in Lab 04
 
 This is the most significant finding in this lab.
@@ -169,7 +180,9 @@ different security postures based on one configuration difference.
 ### Finding 3 — Windows Network Discovery Service (Port 5357)
 
 **Service:** Microsoft HTTPAPI 2.0 (SSDP/UPnP)
+
 **Communication:** HTTP
+
 **Accessible from network:** Yes — confirmed from Kali in Lab 04
 
 Windows opened this port itself as part of its built-in network discovery
